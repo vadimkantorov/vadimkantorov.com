@@ -10,6 +10,11 @@
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     
+    <style>
+    	.bibtex {display: none}
+    	.thesis {display: none}
+    </style>
+    
     <title>Vadim Kantorov</title>
   </head>
   <body>
@@ -59,7 +64,7 @@
 					<u>Vadim Kantorov</u>, Ivan Laptev<br />
 					in CVPR 2014<br />
 					[<a href="http://www.di.ens.fr/willow/research/fastvideofeat/paper/cvpr2014_kantorov_paper.pdf">paper</a>]&nbsp;[<a href="http://www.di.ens.fr/willow/research/fastvideofeat/paper/cvpr2014_kantorov_poster.pdf">poster</a>]&nbsp;[<a href="#" class="bibtex_toggler">bibtex</a>]&nbsp;[<a href="http://github.com/vadimkantorov/cvpr2014">code</a>]&nbsp;[<a href="http://www.di.ens.fr/willow/research/fastvideofeat">webpage</a>]
-					<pre class="bibtex" style="display: none">@inproceedings{kantorov2014,
+					<pre class="bibtex">@inproceedings{kantorov2014,
 	author = {Kantorov, V. and Laptev, I.},
 	title = {Efficient feature extraction, encoding and classification for action recognition},
 	booktitle = {Proc. Computer Vision and Pattern Recognition (CVPR), IEEE, 2014},
@@ -67,14 +72,17 @@
 }</pre>
 				</div>
 				<div style="margin-top:10px">
-					<strong>Evaluating MPEG compressed domain features for action recognition</strong><br />
-					Master thesis. Advisor: Ivan Laptev.<br />
-					[<a href="https://github.com/vadimkantorov/vadimkantorov.com/releases/download/thesis/master_thesis_kantorov.pdf">pdf</a>]
-				</div>
-				<div style="margin-top:10px">
-					<strong>Automatically assessing content quality in community question answering sites</strong><br />
-					Bachelor thesis, presented at TbiLLC 2011. Advisor: Pavel Braslavski.<br />
-					[<a href="https://github.com/vadimkantorov/vadimkantorov.com/releases/download/thesis/bachelor_thesis_kantorov.pdf">pdf</a>]
+					<a href="#" class="thesis_toggler">Theses &gt;&gt;</a>				
+					<div style="margin-top:10px" class="thesis">
+						<strong>Evaluating MPEG compressed domain features for action recognition</strong><br />
+						Master thesis. Advisor: Ivan Laptev.<br />
+						[<a href="https://github.com/vadimkantorov/vadimkantorov.com/releases/download/thesis/master_thesis_kantorov.pdf">pdf</a>]
+					</div>
+					<div style="margin-top:10px" class="thesis">
+						<strong>Automatically assessing content quality in community question answering sites</strong><br />
+						Bachelor thesis, presented at TbiLLC 2011. Advisor: Pavel Braslavski.<br />
+						[<a href="https://github.com/vadimkantorov/vadimkantorov.com/releases/download/thesis/bachelor_thesis_kantorov.pdf">pdf</a>]
+					</div>
 				</div>
 			</div>
 		</div>
@@ -92,7 +100,8 @@
     	$(document).ready(function()
     	{
 	    	$('.bibtex_toggler').click(function() {$(this).siblings('.bibtex').toggle(); return false;})
- 	});
+	    	$('.thesis_toggler').click(function() {$(this).siblings('.thesis').toggle(); return false;})
+ 		});
     </script>
     
     <script type="text/javascript">
