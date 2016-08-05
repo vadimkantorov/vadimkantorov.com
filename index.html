@@ -12,8 +12,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     
     <style>
+    	.collapsing {-webkit-transition: none; transition: none;} /*disable collapsing animation*/
     	.small-margin {margin-top: 10px;}
     	.large-margin {margin-top: 50px;}
+    	
+    	.profile-picture {height:180px;}
+    	.publication {margin-bottom:10px;}
+    	.thesis {margin-top:10px;}
     </style>
     
     <title>Vadim Kantorov</title>
@@ -47,7 +52,7 @@
 		    		</div>
 		    </div>
 		    <div class="col-sm-3">
-    			<img src="vadimkantorov.jpg" style="height:180px;" alt="photo of Vadim Kantorov" />
+    			<img src="vadimkantorov.jpg" class="profile-picture" alt="photo of Vadim Kantorov" />
 		    </div>
 		</div>
 		<div class="row large-margin">
@@ -60,11 +65,11 @@
 	   	<div class="row">
 	   		<div class="col-sm-8 col-sm-offset-3">
 				<h2>Publications</h2>
-				<div>
+				<div class="publication">
 					<strong>ContextLocNet: Context-aware deep network models for weakly supervised localization</strong><br />
 					Vadim Kantorov, Maxime Oquab, Minsu Cho, Ivan Laptev; ECCV 2016<br />
 				</div>
-				<div class="small-margin">
+				<div class="publication">
 					<strong>Efficient feature extraction, aggregation and classification for action recognition</strong><br />
 					Vadim Kantorov, Ivan Laptev; CVPR 2014<br />
 					[<a href="http://www.di.ens.fr/willow/research/fastvideofeat/paper/cvpr2014_kantorov_paper.pdf">paper</a>]&nbsp;[<a href="http://www.di.ens.fr/willow/research/fastvideofeat/paper/cvpr2014_kantorov_poster.pdf">poster</a>]&nbsp;[<a href="#" data-toggle="collapse" data-target=".bibtex-1">bibtex</a>]&nbsp;[<a href="http://github.com/vadimkantorov/cvpr2014">code</a>]&nbsp;[<a href="http://www.di.ens.fr/willow/research/fastvideofeat">webpage</a>]
@@ -77,12 +82,12 @@
 				</div>
 				<div class="small-margin">
 					<a href="#" data-toggle="collapse" data-target=".thesis">Theses &gt;&gt;</a>				
-					<div class="thesis small-margin collapse">
+					<div class="thesis collapse">
 						<strong>Evaluating MPEG compressed domain features for action recognition</strong><br />
 						Master thesis. Advisor: Ivan Laptev<br />
 						[<a href="https://github.com/vadimkantorov/vadimkantorov.com/releases/download/thesis/master_thesis_kantorov.pdf">pdf</a>]
 					</div>
-					<div class="thesis small-margin collapse">
+					<div class="thesis collapse">
 						<strong>Automatically assessing content quality in community question answering sites</strong><br />
 						Bachelor thesis, presented at TbiLLC 2011. Advisor: Pavel Braslavski<br />
 						[<a href="https://github.com/vadimkantorov/vadimkantorov.com/releases/download/thesis/bachelor_thesis_kantorov.pdf">pdf</a>]
