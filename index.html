@@ -19,7 +19,7 @@
         .small-margin { margin-top: 10px; }
         .large-margin { margin-top: 50px; }
         .contact-info { width:100% }
-        .profile-picture { height: 170px; margin-left:15px }
+        .profile-picture { height: 165px; margin-left:15px }
         .publication { margin-bottom: 20px; margin-top: 10px;  }
         .project-thumbnail {padding-left: 0px; padding-top: 2px; }
         .project-description {padding-left: 0px; padding-right: 0px}
@@ -29,13 +29,17 @@
         .publications {padding-right:0px}
         
         body {background-color: #f9f9f9}
-        .container {border-style: solid; border-color: #eee; border-width: 1px; border-radius: 7px; background-color: #fff; margin-left: auto;  margin-right: auto;  max-width: 680px;}
+        .container-highlighted {border-style: solid; border-color: #eee; border-width: 1px; border-radius: 7px; background-color: #fff; margin-left: auto;  margin-right: auto;  max-width: 680px;}
+        .collapsing {
+    -webkit-transition: none;
+    transition: none;
+}
     </style>
     <title>Vadim Kantorov</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container container-highlighted">
         <div class="row large-margin">
             <div class="col-sm-7">
                 <div>
@@ -61,7 +65,8 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <img src="img/vadimkantorov.jpg" class="profile-picture" alt="photo of Vadim Kantorov" />
+            	<img src="img/vadimkantorov.jpg" class="profile-picture collapse in" alt="photo of Vadim Kantorov" data-toggle="collapse" data-target=".profile-picture" />
+                <img src="img/vadimkantorov_integral.jpg" class="profile-picture collapse" alt="" title="Taking a double integral" data-toggle="collapse" data-target=".profile-picture" />
             </div>
         </div>
         <div class="row large-margin">
